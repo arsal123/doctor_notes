@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Effra';
+  src: url('/fonts/effra.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Effra', sans-serif;
+}
+
+.app-container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.review-container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+/* ========== FULL-WIDTH LAYOUT ========== */
+.call-ended-container {
+  display: flex;
+  width: 100vw; /* Full viewport width */
+  height: calc(100vh - 80px); /* Adjust height to account for header */
+  overflow: hidden;
+  padding-top: 60px; /* Space between header and content */
+}
+
+/* ========== HEADER STYLES ========== */
+.header {
+  width: 100%;
+  height: 80px; /* Header height */
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* ========== LEFT SIDE - IMAGE (70%) ========== */
+.call-ended-left {
+  flex: 7; /* 70% of the screen */
+  background-image: url("https://filestore.community.support.microsoft.com/api/images/c1f1b72e-1ffc-485c-92f5-1e2940329fe8?upload=true"); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+/* ========== RIGHT SIDE - CALL SUMMARY (30%) ========== */
+.call-ended-right {
+  flex: 3; /* 30% of the screen */
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/* ========== TITLE STYLES ========== */
+.call-ended-right h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #4263eb;
+  margin-bottom: 12px;
+}
+
+.call-ended-right h2 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* ========== TEXTAREA INPUT ========== */
+.textarea-input {
+  width: 100%;
+  max-width: 90%;
+  height: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: none;
+  background-color: #ffffff;
+}
+
+/* ========== SUBMIT BUTTON ========== */
+.submit-button {
+  width: 100%;
+  max-width: 90%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #4263eb;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #364fc7;
+}

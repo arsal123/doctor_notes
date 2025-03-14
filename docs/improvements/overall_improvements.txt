@@ -1,0 +1,7 @@
+For initial POC we can hardcode some of these things
+
+- Replace simple decisions by introducing AI models to make this decisions and computing advices
+- Each service if needed should ask additional information from such services like assessment services, medical history services
+- ui doctor review
+- at ui doctor review component doctor can ask additional questions or context from specific agent
+- format of output object can be aligned with object/document structure that is required as output document for consultation

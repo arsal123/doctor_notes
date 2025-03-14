@@ -1,0 +1,4 @@
+pika  # RabbitMQ client for message handling
+PyYAML  # Configuration file parsing
+python-dotenv  # Load environment variables from .env
+loguru  # Enhanced logging

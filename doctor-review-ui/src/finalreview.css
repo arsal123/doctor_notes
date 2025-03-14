@@ -1,0 +1,66 @@
+/* 📌 Review Page - Teladoc Health Styling */
+.review-container {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 32px;
+  background: #f4f6f9; /* Soft gray background */
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* ✅ Title */
+.review-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #3f3d56; /* Deep Blue - Teladoc Primary */
+  margin-bottom: 10px;
+}
+
+/* ✅ Subtext */
+.review-subtext {
+  font-size: 18px;
+  color: #4a4a68; /* Slightly darker than gray for readability */
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+/* ✅ Confirmation Message */
+.review-confirmation {
+  font-size: 16px;
+  color: #6a6d78; /* Soft gray */
+  margin-bottom: 30px;
+}
+
+/* ✅ Checkmark Animation */
+.checkmark-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.checkmark-animation {
+  width: 90px !important; /* Scaled to match Teladoc's clean aesthetic */
+  height: 90px !important;
+}
+
+/* 🔙 Home Button */
+.home-button {
+  width: 100%;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  background: #0065ff; /* Teladoc Bright Blue */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 6px rgba(0, 101, 255, 0.2);
+}
+
+.home-button:hover {
+  background: #004bbd; /* Slightly darker blue on hover */
+  box-shadow: 0px 4px 8px rgba(0, 101, 255, 0.3);
+}

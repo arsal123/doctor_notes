@@ -1,0 +1,11 @@
+rabbitmq:
+  exchange: "agent_exchange"  # Exchange name (static)
+  queues:
+    stt_processor: "stt_processor_queue"
+    nlp_processor: "nlp_processor_queue"
+    medical_history: "medical_history_queue"
+    notes_generator: "notes_generator_queue"
+    doctor_review: "doctor_review_queue"
+
+logging:
+  level: "INFO"  # Application-wide logging level

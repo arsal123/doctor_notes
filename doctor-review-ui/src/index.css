@@ -1,0 +1,88 @@
+/* ========== LANDING PAGE STYLES (Now Consistent with Review Page) ========== */
+.app-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  width: 750px;
+  max-width: 95%;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title Styling */
+.app-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #4263eb; /* Same as review page */
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.sub-title {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Larger Textarea (Now Matches Review Page Notes Input) */
+.textarea-input {
+  width: 100%;
+  height: 150px; /* Same height as review page inputs */
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  transition: border 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+.textarea-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons (Now Matches Review Page) */
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #4263eb;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #4263eb;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Full Page Layout */
+body {
+  background-color: #eef2f7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 20px;
+}

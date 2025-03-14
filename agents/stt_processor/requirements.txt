@@ -1,0 +1,6 @@
+# STT Processor Dependencies
+openai-whisper  # Whisper ASR Model
+vosk  # Vosk ASR Model
+wave  # WAV file processing
+numpy  # Required for Whisper
+soundfile  # For handling audio files

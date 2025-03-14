@@ -1,0 +1,12 @@
+# Broker dependencies
+-r broker/requirements.txt
+
+# SST Agent
+-r agents/stt_processor/requirements.txt
+
+-r agents/requirements.txt
+
+-r backend/requirements.txt
+
+sqlalchemy
+psycopg2-binary

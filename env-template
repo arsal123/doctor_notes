@@ -1,0 +1,14 @@
+# RabbitMQ Configuration
+RABBITMQ_HOST=localhost
+RABBITMQ_PORT=5672
+RABBITMQ_USER=admin
+RABBITMQ_PASSWORD=admin
+
+# Speech-to-Text Configuration
+USE_WHISPER=false
+# WHISPER_MODEL_SIZE Options: tiny, base, small, medium, large
+WHISPER_MODEL_SIZE=base
+VOSK_MODEL_PATH=/Users/egor.krylovich/workspace/multiagent-medical-system/models/vosk-model
+
+# OpenAI API key
+OPEN_AI_API_KEY=

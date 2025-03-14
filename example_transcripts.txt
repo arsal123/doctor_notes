@@ -1,0 +1,19 @@
+Doctor: Good afternoon, Mrs. Smith. How have you been managing your diabetes?
+Patient: Hello, doctor. I think I’ve been doing okay, but my blood sugar levels have been fluctuating a bit.
+
+Doctor: Have you been monitoring your glucose levels regularly?
+Patient: Yes, I check every morning. Some days it’s normal, but a few times last week, it spiked to 180 mg/dL.
+
+Doctor: I see. Have you changed anything in your diet or routine recently?
+Patient: Not really, but I did go to a family gathering last weekend, and I had a little more dessert than usual.
+
+Doctor: That could explain the spike. Have you experienced any symptoms like excessive thirst, fatigue, or blurred vision?
+Patient: A little fatigue, but nothing major.
+
+Doctor: Let’s review your latest HbA1c results. *[Doctor checks records]* Your levels are stable at 6.8%, which is within control but slightly higher than before. I’d recommend keeping your carb intake balanced and increasing physical activity.
+
+Patient: Understood. Should I change my medication?
+Doctor: Not for now. Continue with your current dose of Metformin, and let’s see how things go over the next month. We’ll reassess during your next visit.
+
+Patient: Sounds good, doctor. Thank you.
+Doctor: Take care, Mrs. Smith!
