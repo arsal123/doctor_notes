@@ -58,66 +58,6 @@ class TranscriptProcessingServer:
 
         return jsonify({"error": "Processing timeout, please try again later"}), 504
 
-        # return jsonify({"{
-        #   "transcription_summary": "bla bla bla",
-        #   "analysis_summary":[
-        #       {
-        #          "analysis_result":{
-        #             "lifestyle_recommendations":[
-        #                "Maintain a balanced diet rich in vitamins and minerals.",
-        #                "Stay hydrated.",
-        #                "Implement regular sleep routines and stress management techniques.",
-        #                "Engage in regular physical activity."
-        #             ],
-        #             "possible_conditions":[
-        #                "Migraine",
-        #                "Tension-type headache",
-        #                "Chronic fatigue syndrome",
-        #                "Sleep disorders",
-        #                "Anemia",
-        #                "Dehydration",
-        #                "Hypothyroidism",
-        #                "Intracranial hypertension"
-        #             ],
-        #             "recommended_tests":[
-        #                "Complete blood count (CBC)",
-        #                "Thyroid function tests",
-        #                "Blood glucose level",
-        #                "MRI or CT scan of the brain (if indicated)"
-        #             ],
-        #             "referral_suggestions":[
-        #                "Neurologist (if headaches persist or worsen)",
-        #                "Sleep specialist (if sleep disorders are suspected)"
-        #             ],
-        #             "risk_factors":[
-        #                "Age",
-        #                "Stress",
-        #                "Poor sleep quality",
-        #                "Dehydration",
-        #                "Dietary deficiencies"
-        #             ],
-        #             "symptoms_identified":[
-        #                "tiredness",
-        #                "persistent headache"
-        #             ],
-        #             "treatment_guidelines":[
-        #                "Manage headache with over-the-counter analgesics (e.g., acetaminophen or ibuprofen).",
-        #                "Ensure adequate hydration.",
-        #                "Evaluate sleep patterns and consider sleep hygiene improvements.",
-        #                "If persistent, refer for further evaluation."
-        #             ],
-        #             "urgency_level":"Routine follow-up"
-        #          },
-        #          "doctor_id":"6fa960f0-5e61-41f4-b9f9-0eac6f941e91",
-        #          "nlp_type":"nlp_general",
-        #          "patient_id":"e0972110-4b72-41c9-a208-2a0a104c5fbb"
-        #       }
-        #    ],
-        #    "doctor_id":"UUID(""6fa960f0-5e61-41f4-b9f9-0eac6f941e91"")",
-        #    "patient_id":"UUID(""e0972110-4b72-41c9-a208-2a0a104c5fbb"")",
-        #    "transcription":"The patient is feeling very tired and has a persistent headache."
-        # })
-
     def chat_agent(self):
         data = request.get_json()
         user_message = data.get("message")
