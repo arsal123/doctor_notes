@@ -4,19 +4,19 @@ import "./reviewpage.css";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 import axios from "axios";
-import ReactMarkdown from "react-markdown"; // ✅ Added Markdown support
+import ReactMarkdown from "react-markdown"; //Added Markdown support
 
-// 🔹 Toggle Dummy Data ON/OFF
-const useDummyData = true; // Set to false to use API data from app.tsx
+//Toggle Dummy Data ON/OFF
+const useDummyData = false; // Set to false to use API data from app.tsx
 
 export default function ReviewPage() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // 🔹 Get API Data from `app.tsx` (or default to empty object)
+  //Get API Data from `app.tsx` (or default to empty object)
   const apiData = location.state || {};
 
-  // 🔹 Dummy Data (Used when `useDummyData = true`)
+  //Dummy Data (Used when `useDummyData = true`)
   const dummyData = {
     transcript: "Patient complains of persistent headache and fatigue.",
     transcriptionSummary: "### Summary\n**Patient reports frequent headaches and fatigue.** Suggested hydration & sleep improvement.",
@@ -49,7 +49,7 @@ export default function ReviewPage() {
     ],
   };
 
-  // 🔹 Use API Data if Available, Otherwise Use Dummy Data
+  //Use API Data if Available, Otherwise Use Dummy Data
   const transcript = useDummyData ? dummyData.transcript : apiData.transcript || "";
   const transcriptionSummary = useDummyData ? dummyData.transcriptionSummary : apiData.transcriptionSummary || "";
   const analysisSummary = useDummyData ? dummyData.analysisSummary : apiData.analysisSummary || [];
@@ -83,7 +83,7 @@ export default function ReviewPage() {
     }));
   };
 
-  // ✅ Function to Render Analysis Summary Sections Dynamically
+  //Function to Render Analysis Summary Sections Dynamically
   const renderAnalysisSection = (title: string, type: string) => {
     const sectionData = analysisSummary?.filter((entry: any) => entry.nlp_type === type) || [];
 
